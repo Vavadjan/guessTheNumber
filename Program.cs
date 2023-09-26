@@ -38,17 +38,12 @@
 
                 oneMore = 2;
 
-                for (int v = 1; v >= 0 && oneMore != 1; v++)
+                for (int v = 1; v >= 0 && oneMore != 1 && oneMore != 0; v++)
                 {
                     Console.WriteLine("Хотели бы вы сыграть ещё раз?");
                     Console.WriteLine("Введите: 1 - да, 0 - нет");
 
                     oneMore = Convert.ToInt32(Console.ReadLine());
-
-                    if (oneMore == 0)
-                    {
-                        break;
-                    }
                 }
             }
         }
